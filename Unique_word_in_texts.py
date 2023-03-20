@@ -32,3 +32,7 @@ for word in list_of_words:
     else:
         unique_words_as_dict[word] += 1
 unique_words_as_dict
+
+top_words = sorted(unique_words_as_dict.items(), key=lambda key_val_tuple: key_val_tuple[1], reverse=True)
+
+top_words[:25]
